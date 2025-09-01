@@ -12,7 +12,13 @@
 
 ● Gmail: Open the email, click the three dots (⋮), and select Show original.
 
+<img width="1366" height="604" alt="4-1" src="https://github.com/user-attachments/assets/a2d637d6-fce3-491d-9fc6-7cd43acc1cd7" />
+
 ● Select all the text in the header and copy it
+
+<img width="1547" height="648" alt="4-3" src="https://github.com/user-attachments/assets/a2012c5f-ea15-49a4-91e3-43e4239b1583" />
+
+
 
 **Step 2: Use a Mail Header Analyzer (MHA)**
 
