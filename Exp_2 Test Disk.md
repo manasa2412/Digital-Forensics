@@ -83,4 +83,112 @@ Procedure
 
 
 
+● Select it and press Enter to scan the drive for lost partitions.
+
+● Once a partition is found, you can press p to list its files. Deleted files and folders often appear in red.
+
+● Press q to return to the search results.
+
+**6️⃣. Perform a Deeper Search**
+   
+● If the Quick Search fails to find your lost partitions, select [Deeper Search].
+
+<img width="1920" height="1080" alt="2-6" src="https://github.com/user-attachments/assets/e8ecf9a1-e4da-47d7-bd52-69478a5cef53" />
+
+
+
+
+
+● This process can take a long time, as it scans the entire drive, block by block, to find remnants of partition structures.
+
+● Again, use p to preview files and confirm if a found partition is the one you are looking for.
+
+**7️⃣. Modify Partition Status**
+
+● After finding the correct partitions, use the Left/Right arrow keys to set their status.
+
+● Use Left/Right arrow keys to change status:
+
+P: Primary
+
+ *: Bootable
+
+L: Logical
+
+D: Deleted
+
+
+<img width="1920" height="1080" alt="2-5" src="https://github.com/user-attachments/assets/77c95387-8781-4997-b98e-29c47c927a72" />
+
+
+
+
+
+
+
+
+
+● Ensure that the partitions you want to recover are marked as Primary or Logical (and not deleted).
+
+**8️⃣. Write the Partition Table**
+   
+● Once you are confident the partition structure is correct, select [Write] from the menu.
+
+
+
+<img width="1920" height="1080" alt="2-6" src="https://github.com/user-attachments/assets/c3241de7-79d0-4ace-8dec-bbfbf753774b" />
+
+
+
+
+
+
+
+● Confirm the operation by pressing y (for yes). This will write the new partition table to your disk.
+
+
+<img width="1920" height="1080" alt="2-7" src="https://github.com/user-attachments/assets/98f39ee3-a06c-4f95-981c-576a7822dc73" />
+
+
+
+
+
+
+
+WARNING: This is a permanent change. Double-check your selections before writing.
+
+**9️⃣. Recover File**
+
+● If you just need to recover a few files without fixing the partition table, you can do so from the file list (after pressing p).
+
+● Navigate to the folder containing your desired files.
+
+● Use the colon : key to select the files you want to recover.
+
+● Press the uppercase C key to copy the selected file(s).
+
+● Navigate to a safe destination on a different storage device and press uppercase C again to paste.
+
+**🔟. Exit and Restart**
+
+● Once your task is complete, select [Quit] to exit the program.
+
+● If you wrote a new partition table to the drive, it is recommended to restart your computer to allow the operating system to recognize the changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
