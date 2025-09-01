@@ -1,10 +1,10 @@
-**Ex.No.3 Wireshark – Network Packet Capture and Analysis Tool**
+ # Ex.No.3 Wireshark – Network Packet Capture and Analysis Tool
 
 
 Procedure: Capturing Plaintext Passwords
 
 
-**Step 1: Start Capturing Packets**
+## Step 1: Start Capturing Packets
 
 ● First, open Wireshark. You will see a list of all available network interfaces (e.g., "Wi-Fi," "Ethernet").
 
@@ -24,7 +24,7 @@ passing through that interface.
 
 
 
-**Step 2: Generate Login Traffic**
+## Step 2: Generate Login Traffic
 
 ● Open a web browser and navigate to http://testphp.vulnweb.com/login.php.
 
@@ -40,7 +40,7 @@ passing through that interface.
 <img width="1302" height="961" alt="3-3" src="https://github.com/user-attachments/assets/f164a6d1-c03e-4f9b-87fd-a26f37f7b61b" />
 
 
-**step 3: Stop Capture and Filter Traffic**
+## step 3: Stop Capture and Filter Traffic
 
 ● Return to Wireshark and click the Stop button (the red square).
 
@@ -53,7 +53,7 @@ for an HTTP POST request.
 <img width="1919" height="574" alt="3-4" src="https://github.com/user-attachments/assets/cc315447-6524-40ee-92b3-f3e55b4fa751" />
 
 
-**step 4: Inspect the Packet to Find Credentials**
+## Step 4: Inspect the Packet to Find Credentials
 
 ● In the filtered packet list, you should see a packet with information like "POST /userinfo.php". Select this packet.
 
@@ -68,7 +68,7 @@ for an HTTP POST request.
 <img width="1862" height="915" alt="3-5" src="https://github.com/user-attachments/assets/8b41f631-fd84-4037-bd46-07ce3fa25d1c" />
 
 
-**Result**
+## Result
 
 The experiment successfully intercepts the login credentials in a human-readable format. The analysis of the captured POST packet reveals the
 plaintext data that was transmitted over the network:
