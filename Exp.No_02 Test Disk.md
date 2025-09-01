@@ -1,4 +1,4 @@
-**Ex.No.2 TestDisk: Open-Source Data Recovery Tool**
+**Exp.No.2 TestDisk: Open-Source Data Recovery Tool**
 
 **Aim :**
 
