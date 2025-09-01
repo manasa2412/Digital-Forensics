@@ -1,194 +1,95 @@
-**Exp.No.2 TestDisk: Open-Source Data Recovery Tool**
+# Exp.No_02_Recover Deleted or Damaged Files Using TestDisk 
+ 
 
-**Aim :**
+---
 
-To use TestDisk step by step to recover a missing partition and repair a corrupted one.
+##  Aim  
+● To use TestDisk step by step to recover a missing partition and repair a corrupted one.  
 
-**🛠️ Installation**
+---
 
-Linux (Debian/Ubuntu): sudo apt-get install testdisk
+##  Procedure Steps  
 
-macOS (Homebrew): brew install testdisk
+### Step 1: Log Creation  
+● TestDisk starts with an option to create a log file.  
+● All hard drives should be detected and listed with the correct size.  
 
-Windows: Download the executable from the official CGSecurity website.
+<div align="center">  
+<img width="1920" height="1080" alt="2-1" src="https://github.com/user-attachments/assets/8780776e-7d9e-4f2d-8ca4-a8b4c21fa372" />  
+</div>  
 
-Procedure
+---
 
-**1️⃣ Create a Log File**
-   
-● Launch TestDisk from your terminal or command prompt using sudo testdisk (or testdisk_win.exe on Windows).
+### Step 2: Partition Table Type Selection  
+● TestDisk displays the partition table types. Usually, the **default value** is correct (auto-detected).  
+● Press **Enter** to proceed.  
 
-● Select the [Create] option to generate a log file of the recovery session. This is helpful for future reference or troubleshooting.
+<div align="center">  
+<img width="1920" height="1080" alt="2-2" src="https://github.com/user-attachments/assets/ad03de73-9464-4492-ab69-0e7229125bd2" />  
+</div>  
 
-<img width="1920" height="1080" alt="2-1" src="https://github.com/user-attachments/assets/0096d768-900f-4904-8337-b7ece8c97704" />
+---
 
+### Step 3: Analyse Current Partition Structure  
+● Use the default menu **Analyse** to check partition structure and search for lost partitions.  
+● Corrupted or invalid partitions will be shown here.  
 
+<div align="center">  
+<img width="1920" height="1080" alt="2-3" src="https://github.com/user-attachments/assets/34d51af4-0268-44b0-a0fb-05af2edc8947" />  
+</div>  
 
+---
 
-**2️⃣ Select the Drive to Analyze****
-   
-● TestDisk will display a list of all detected storage devices.
+### Step 4: Quick Search for Partitions  
+● TestDisk performs a quick scan and lists partitions found (including missing ones).  
+● Highlight the partition and press **p** to list files. Files shown in red are deleted entries.  
 
-● Use the Up/Down arrow keys to highlight the drive that contains your lost data.
+<div align="center">  
+<img width="1920" height="1080" alt="2-4" src="https://github.com/user-attachments/assets/87b4418f-178d-49a3-809f-cbdac854f9c6" />  
+</div>  
 
+---
 
-<img width="1920" height="1080" alt="2-2" src="https://github.com/user-attachments/assets/baa393b6-0876-4b50-a8ef-d0e69c0b3e26" />
+### Step 5: Deeper Search (If Needed)  
+● If a partition is still missing, run **Deeper Search**.  
+● This checks backup boot sectors (FAT32, NTFS, ext2/ext3).  
 
-● Select [Proceed] to move to the next step.
+<div align="center">  
+<img width="1920" height="1080" alt="2-5" src="https://github.com/user-attachments/assets/b14a2181-21a8-4e01-89bc-eea0c9d35e0e" />  
+</div>  
 
-**3️⃣ Choose the Partition Table Type**
+---
 
-● TestDisk will automatically suggest the most likely partition table type (e.g., Intel/PC, EFI GPT).
+### Step 6: Partition Selection & Recovery  
+- Navigate partitions found.  
+- Use **p** to list files for verification.  
+- Change status:  
+  - `P` → Primary  
+  - `*` → Bootable  
+  - `L` → Logical  
+  - `D` → Deleted (won’t recover)  
 
-● The default value is usually correct. Confirm the selection by pressing Enter.
+Once correct partitions are set, confirm with **Enter**.  
 
+<div align="center">  
+<img width="1920" height="1080" alt="2-6" src="https://github.com/user-attachments/assets/e8b4e946-4a69-4e7a-a84e-6e81d11f3d01" />  
+</div>  
 
-<img width="1920" height="1080" alt="2-3" src="https://github.com/user-attachments/assets/82988911-e66b-4f4f-942c-2470ff26996a" />
+---
 
+### Step 7: Partition Table & NTFS Boot Sector Recovery  
+- Write the new partition structure → press **Write**, confirm with `y`.  
+- If boot sector is damaged, copy from backup using **Backup BS**.  
+- After successful recovery, reboot the system.  
 
+<div align="center">  
+<img width="1920" height="1080" alt="2-7" src="https://github.com/user-attachments/assets/363411fb-3e10-4567-ad5b-ba186cdc4f19" />  
+</div>  
 
+---
 
-
-
-**4️⃣ Analyze Current Partition Structure**
-   
-● From the main menu, choose [Analyse] and press Enter.
-
-<img width="1920" height="1080" alt="2-4" src="https://github.com/user-attachments/assets/f1d28908-c588-4519-9dd0-bbaf0b37cbaf" />
-
-
-
-
-
-
-
-● This will display the current partition table and check for errors or missing partitions.
-
-
-
-
-**5️⃣ Perform a Quick Search**
-
-   
-●After the analysis, you will be prompted to perform a [Quick Search].
-
-
-<img width="1920" height="1080" alt="2-5" src="https://github.com/user-attachments/assets/aa45ebe6-0f2d-4bb3-abbd-fbb17afa84b8" />
-
-
-
-
-
-
-
-
-
-● Select it and press Enter to scan the drive for lost partitions.
-
-● Once a partition is found, you can press p to list its files. Deleted files and folders often appear in red.
-
-● Press q to return to the search results.
-
-**6️⃣. Perform a Deeper Search**
-   
-● If the Quick Search fails to find your lost partitions, select [Deeper Search].
-
-<img width="1920" height="1080" alt="2-6" src="https://github.com/user-attachments/assets/e8ecf9a1-e4da-47d7-bd52-69478a5cef53" />
-
-
-
-
-
-● This process can take a long time, as it scans the entire drive, block by block, to find remnants of partition structures.
-
-● Again, use p to preview files and confirm if a found partition is the one you are looking for.
-
-**7️⃣. Modify Partition Status**
-
-● After finding the correct partitions, use the Left/Right arrow keys to set their status.
-
-● Use Left/Right arrow keys to change status:
-
-P: Primary
-
- *: Bootable
-
-L: Logical
-
-D: Deleted
-
-
-<img width="1920" height="1080" alt="2-5" src="https://github.com/user-attachments/assets/77c95387-8781-4997-b98e-29c47c927a72" />
-
-
-
-
-
-
-
-
-
-● Ensure that the partitions you want to recover are marked as Primary or Logical (and not deleted).
-
-**8️⃣. Write the Partition Table**
-   
-● Once you are confident the partition structure is correct, select [Write] from the menu.
-
-
-
-<img width="1920" height="1080" alt="2-6" src="https://github.com/user-attachments/assets/c3241de7-79d0-4ace-8dec-bbfbf753774b" />
-
-
-
-
-
-
-
-● Confirm the operation by pressing y (for yes). This will write the new partition table to your disk.
-
-
-<img width="1920" height="1080" alt="2-7" src="https://github.com/user-attachments/assets/98f39ee3-a06c-4f95-981c-576a7822dc73" />
-
-
-
-
-
-
-
-WARNING: This is a permanent change. Double-check your selections before writing.
-
-**9️⃣. Recover File**
-
-● If you just need to recover a few files without fixing the partition table, you can do so from the file list (after pressing p).
-
-● Navigate to the folder containing your desired files.
-
-● Use the colon : key to select the files you want to recover.
-
-● Press the uppercase C key to copy the selected file(s).
-
-● Navigate to a safe destination on a different storage device and press uppercase C again to paste.
-
-**🔟. Exit and Restart**
-
-● Once your task is complete, select [Quit] to exit the program.
-
-● If you wrote a new partition table to the drive, it is recommended to restart your computer to allow the operating system to recognize the changes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##  Conclusion  
+- TestDisk can recover **lost/missing partitions** and **repair corrupted ones**.  
+- Supports **Quick Search** and **Deeper Search** for thorough analysis.  
+- Allows **partition recovery, boot sector repair, and file system integrity restoration**.  
+- A powerful open-source tool for forensic and recovery tasks.  
