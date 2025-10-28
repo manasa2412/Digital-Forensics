@@ -21,9 +21,7 @@ Choose the version for your OS (Windows/Linux/macOS) and follow the installation
 
 <p align="center">
   
-  <img src="https://github.com/user-attachments/assets/bca4186b-67f9-4d6f-b870-e0dbff2b25d3" width="80%" />
-</p>
-
+  
 
 
 - Launch Autopsy and click **New Case**.  
