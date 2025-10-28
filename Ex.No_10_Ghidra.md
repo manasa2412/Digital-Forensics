@@ -53,7 +53,6 @@ Step-by-step instructions on performing static analysis using Ghidra:
 * **Loading the Binary:** How to launch Ghidra, create a new project, and import the sample binary.
 * **Auto-Analysis:** How to run the initial Ghidra auto-analysis and select appropriate analyzers.
 * **Identifying Entry Points:** Locating the main function or the binary's execution starting point.
-![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/97de06473d645e6627f8ffd9004efdb5c19742a8/images/10.15.png)
 
 
 ![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/97de06473d645e6627f8ffd9004efdb5c19742a8/images/10.14.png)
